@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap');
+@import url('http://fonts.cdnfonts.com/css/alphacentauri');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #222831;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container-items{
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item{
+    position: relative;
+    flex-grow: 1;
+    font-family: 'Taviraj', sans-serif;
+    font-size: 80px;
+    transition: all 300ms ease-in-out;
+}
+
+.item:hover{
+    flex-grow: 1.7;
+    font-size: 200px;
+}
+
+h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff8303;
+    font-family: 'AlphaCentauri' !important;
+    font-weight: 200;
+}
+
+h3:hover{
+    color: #fff;
+}
+
+img{
+    width: 100%;
+}
+
+.container-img-wrap{
+    position: absolute;
+    top: -57rem;
+    left: -80px;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+
+.container-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+@media(max-width: 900px) {
+    .container-items{
+        height: 100px;
+    }
+    .item{
+        font-size: 20px;
+    }
+    .item:hover{
+        flex-grow: 1;
+        font-size: 20px;
+    }
+    .container-img-wrap{
+        display: none;
+    }
+    .navbar{
+        display: none !important;
+    }
+}
+
+
+.site-logo{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    font-family: 'AlphaCentauri' !important;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.site-menu{
+    display: flex;
+}
+
+
+.menu-item{
+    margin-left: 60px;
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 20%;
+    padding: 40px;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    z-index: 2;
+}
+
+
+.header-left span{
+    font-family: 'Taviraj', sans-serif;
+    margin-left: 20px;
+}
